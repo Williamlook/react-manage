@@ -1,0 +1,21 @@
+*{
+	margin:0;
+	padding:0;
+	font-family: "微软雅黑";
+}
+.loginHeader{
+	position:relative;
+	height:100px;
+	width:100%;
+	text-align: center;
+	background-color: #F2F2F2;
+	color: block;
+}
+.logindiv{
+	position:absolute;
+	height:100px;
+	width:200px;
+	margin:200px auto;
+    border:1px solid #F2F2F2;
+    padding:10px;
+}
