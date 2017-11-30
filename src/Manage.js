@@ -8,7 +8,7 @@ import { connect } from 'react-redux'
 class Manage extends Component{
 	getIndex(index){
 		if (this.props.onDeleteComment) {
-			his.props.onDeleteComment(index)
+			this.props.onDeleteComment(index)
 		}
 		}
 	render(){

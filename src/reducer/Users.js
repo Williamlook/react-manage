@@ -15,8 +15,8 @@ export default function (state,action){
 		break
 		case 'DELETE_USER':
 		return {
-			users:[...state.users.userIndex(0,userIndex),
-			...state.users.userIndex(userIndex++)]
+			users:[...state.users.slice(0,action.userIndex++),
+			...state.users.slice(action.userIndex)]
 		}
 		break
 		default:
