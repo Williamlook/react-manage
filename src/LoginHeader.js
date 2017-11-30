@@ -1,10 +1,10 @@
 import React,{Component} from 'react'
 
-class LogoHeader extends Component{
+class LoginHeader extends Component{
 	render(){
 		return(
-			<div className="loginHeader">
-			<h1>User Management</h1>
+			<div>
+			<h1 className="loginHeader">User Management</h1>
 			</div>
 			)
 	}

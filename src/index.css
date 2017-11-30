@@ -4,18 +4,74 @@
 	font-family: "微软雅黑";
 }
 .loginHeader{
+	font-size: 3rem;
 	position:relative;
-	height:100px;
+	height:150px;
 	width:100%;
 	text-align: center;
 	background-color: #F2F2F2;
 	color: block;
+	line-height: 150px;
 }
 .logindiv{
 	position:absolute;
-	height:100px;
-	width:200px;
-	margin:200px auto;
-    border:1px solid #F2F2F2;
+	height:16rem;
+	width:26rem;
+	top:50%;
+	left:50%;
+	margin-top:-8rem;
+	margin-left:-13rem;
+    border:3px solid #F2F2F2;
     padding:10px;
+    background-color: #F2F2F2;
+}
+.span-username{
+	font-size:1.5rem;
+	margin-left:5rem;
+	margin-right: 1.5rem;
+}
+.span-username{
+	display:inline-block;
+	font-size:1.5rem;
+	margin-left:5rem;
+	margin-top:1rem;
+	margin-right: 1.5rem;
+}
+.button{
+	position:relative;
+	padding: 2rem;
+}
+.reset{
+	position:absolute;
+	top:1rem;
+	left:6.5rem;
+	height:2.5rem;
+	width:4rem;
+	margin-top:1.3rem;
+}
+.login{
+	position: absolute;
+	top:1rem;
+	left:13rem;
+	height:2.5rem;
+	width:4rem;
+	margin-top:1.3rem;
+}
+.welcome{
+	position:relative;
+	height:150px;
+	width:100%;
+	background-color: #F2F2F2;
+	color: block;
+}
+.welcome-header{
+	position:absolute;
+	top: 2rem;
+	left: 3rem;
+	font-size: 1rem;
+	padding: 2rem;
+}
+.welcome-buttom{
+	display: inline-block;
+	margin:2rem;
 }

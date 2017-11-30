@@ -1,7 +1,7 @@
 //webpack.config.js
 module.exports={
 	devtool:'eval-source-map',
-	entry:__dirname+'/src/main.js',
+	entry:__dirname+'/src/index.js',
 	output:{
 		path:__dirname+'/public',
 		filename:'bundle.js'
@@ -26,12 +26,11 @@ module.exports={
                 	loader:'style-loader'
                 },{
                 	loader:'css-loader'
-                	options:{
-                		modiles:true
-                	}
                 }
 			]
 		}
 		]
-	}
+	},
+	plugins:[
+	]
 };
