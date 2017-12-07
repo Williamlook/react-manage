@@ -59,29 +59,42 @@
 }
 .welcome{
 	position:relative;
-	height:150px;
+	height:8rem;
 	width:100%;
 	background-color: #F2F2F2;
 	color: block;
 }
 .welcome-header{
-	position:absolute;
-	top: 2rem;
-	left: 10rem;
-	font-size: 1rem;
-	padding: 2rem;
+	position: absolute;
+	left:14%;
+	bottom: 0.5rem;
 }
-.welcome-buttom{
+.welcome-add{
 	display: inline-block;
-	margin:2rem;
+	margin-left:18rem;
+}
+.message-hea{
+	margin-left:1rem; 
+}
+.message-div{
+	width:20rem;
+	margin-left: 12%;
+	float: left;
 }
 .message{
-	position:relative;
-	left:12rem;
-	top: 2rem;
-	margin-top:2rem;
+	margin:0rem 1rem;
 }
-.message-nbsp{
+.message-users{
 	display: inline-block;
-	margin-right: 2rem;
+	margin-right: 1rem;
+}
+.adduser{
+	float:left;
+	margin-left: 3rem;
+}
+.adduser-input{
+	margin:1rem 0.5rem;
+}
+.welcome-list{
+	margin: 2rem 0rem;
 }

@@ -1,10 +1,11 @@
-import React,{Component} from 'react'
+import React,{ Component } from 'react'
+import Manage from './Manage'
+import { BrowserRouter as Router, Route, Link ,exact} from 'react-router-dom'
 import LoginHeader from './LoginHeader'
-import { Link } from 'react-router-dom'
 
-class LoginDiv extends Component{
-	constructor(){
-		super()
+class Logindiv extends Component{
+	constructor(props){
+		super(props)
 		this.state={
 			username:'',
 			password:''
@@ -44,8 +45,17 @@ class LoginDiv extends Component{
 			password:''
 		})
 	}
+	onLogin(){
+		console.log(1)
+		if(this.state.username!=='admin'||this.state.password!=='admin'){
+			alert('登录名或密码错误')
+		}
+	}
 	render(){
 		return(
+			<Router>
+			<div>
+			<LoginHeader />
 			<div className="logindiv">
 			<span className="span-username">账号：</span>
 			<input type="text" value={this.state.username} ref={(input)=>this.input=input} onChange={this.manageCom.bind(this)} /><br />
@@ -53,22 +63,13 @@ class LoginDiv extends Component{
 			<input value={this.state.password} onChange={this.passwordCom.bind(this)}/><br />
 			<div className="button">
 			<button className="reset" onClick={this.resetClick.bind(this)}>重置</button>
-			<button className="login">登陆</button>
+			<Link to='/manage'><button className="login" onClick={this.onLogin.bind(this)}>登陆</button></Link>
+			<Route path='/manage' component={Manage} />
 			</div>
 			</div>
+			</div>
+			</Router>
 			)
 	}
 };
-class Login extends Component{
-	render(){
-		return(
-			<div>
-			<LoginHeader />
-			<LoginDiv />
-			</div>
-			)
-
-	}
-}
-
-export default Login 
+export default Logindiv

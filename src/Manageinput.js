@@ -4,13 +4,13 @@ class ManageInput extends Component{
 		constructor(){
 			super()
 			this.state={
-				username:''
+				name:''
 			}
 		}
 	componentWillMount(){
-		if(localStorage.getItem('username')){
+		if(localStorage.getItem('name')){
 			this.setState({
-				username:localStorage.getItem('username')
+				username:localStorage.getItem('name')
 			});
 		}
 	}
@@ -19,8 +19,10 @@ class ManageInput extends Component{
 			<div className='welcome'>
 			<div className='welcome-header'>
 			<h3>欢迎用户{this.state.username}来到user management</h3>
-			<button className='welcome-buttom'>添加用户</button>
+			<div className='welcome-list'>
 			<span>用户列表如下:</span>
+			<span className='welcome-add'>添加用户</span>
+			</div>
 			</div>
 			</div>
 			)

@@ -3,11 +3,11 @@ module.exports={
 	devtool:'eval-source-map',
 	entry:__dirname+'/src/index.js',
 	output:{
-		path:__dirname+'/public',
+		path:__dirname+'/src/public',
 		filename:'bundle.js'
 	},
 	devServer:{
-		contentBase:'./public',
+		contentBase:'./src/public',
 		inline:true,
 		historyApiFallback:true
 	},
